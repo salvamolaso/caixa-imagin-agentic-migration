@@ -1,0 +1,40 @@
+{
+  "templates": [
+    {
+      "name": "imagin-homepage",
+      "urls": ["https://www.imagin.com/"],
+      "description": "imagin bank homepage with hero carousel, product cards, feature columns, and FAQ accordion",
+      "blocks": [
+        {
+          "name": "carousel-hero",
+          "instances": [
+            ".d3-slider-animado",
+            ".card-slider"
+          ]
+        },
+        {
+          "name": "columns-feature",
+          "instances": [
+            ".d2.block-mgm",
+            ".d2.mgm",
+            ".info-mgm"
+          ]
+        },
+        {
+          "name": "cards-product",
+          "instances": [
+            ".d2.product-simple",
+            ".d2.product-filters",
+            ".card-explicativas"
+          ]
+        },
+        {
+          "name": "accordion-faq",
+          "instances": [
+            ".d2.faqs .accordion"
+          ]
+        }
+      ]
+    }
+  ]
+}

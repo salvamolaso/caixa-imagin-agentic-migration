@@ -14,6 +14,23 @@ import {
 } from './aem.js';
 
 /**
+ * Moves instrumentation attributes from one element to another.
+ * Used to preserve data-aue-* attributes during block decoration.
+ * @param {Element} from The source element
+ * @param {Element} to The target element
+ */
+export function moveInstrumentation(from, to) {
+  if (!from || !to) return;
+  // Move all data-aue-* attributes (used by AEM Universal Editor)
+  [...from.attributes]
+    .filter((attr) => attr.name.startsWith('data-aue-') || attr.name.startsWith('data-richtext'))
+    .forEach((attr) => {
+      to.setAttribute(attr.name, attr.value);
+      from.removeAttribute(attr.name);
+    });
+}
+
+/**
  * Builds hero block and prepends to main in a new section.
  * @param {Element} main The container element
  */
