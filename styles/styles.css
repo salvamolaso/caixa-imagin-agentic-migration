@@ -181,6 +181,19 @@ h4 { font-size: var(--heading-font-size-m); }
 h5 { font-size: var(--heading-font-size-s); }
 h6 { font-size: var(--heading-font-size-xs); }
 
+/* Highlighted text in headings - marker effect */
+h1 strong,
+h2 strong,
+h3 strong,
+h4 strong,
+h5 strong,
+h6 strong {
+  background-color: var(--color-accent);
+  padding: 0 0.15em;
+  border-radius: 2px;
+  font-weight: inherit;
+}
+
 p,
 dl,
 ol,
