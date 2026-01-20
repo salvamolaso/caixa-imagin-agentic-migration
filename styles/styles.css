@@ -191,6 +191,30 @@ blockquote {
   margin-bottom: 0.25em;
 }
 
+/* Custom checkmark bullet points */
+ul {
+  list-style: none;
+  padding-left: var(--spacing-l);
+}
+
+ul li {
+  position: relative;
+  padding-left: var(--spacing-l);
+  margin-bottom: var(--spacing-xs);
+}
+
+ul li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0.25em;
+  width: 16px;
+  height: 16px;
+  background-image: url('https://www.imagin.com/documents/554420/1806666/icon-type04-xs-check.svg/ac26fede-0793-fc42-3d32-5a45ace54e67?t=1757752161846');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
 strong {
   font-weight: var(--font-weight-bold);
 }
