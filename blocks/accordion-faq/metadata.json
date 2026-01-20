@@ -1,0 +1,39 @@
+{
+  "variantName": "accordion-faq",
+  "baseBlock": "accordion",
+  "version": "1.0.0",
+  "created": "2026-01-20T11:37:00.000Z",
+  "sourceContext": {
+    "originUrl": "https://www.imagin.com/",
+    "originPage": "Homepage FAQ section",
+    "blockPosition": "bottom"
+  },
+  "visualCharacteristics": {
+    "colorScheme": "light",
+    "density": "compact",
+    "purpose": "faq",
+    "imagePattern": "noimg"
+  },
+  "contentPattern": {
+    "structure": "question + answer",
+    "buttonCount": 0,
+    "imageCount": 0
+  },
+  "reuseGuidance": {
+    "suitableFor": [
+      "FAQ sections",
+      "help pages",
+      "support content",
+      "expandable Q&A"
+    ],
+    "notSuitableFor": [
+      "product specifications",
+      "tabbed content"
+    ]
+  },
+  "usage": {
+    "pagesUsing": ["/index"],
+    "reuseCount": 1,
+    "lastUsed": "2026-01-20T11:37:00.000Z"
+  }
+}

@@ -1,0 +1,156 @@
+/*
+ * Columns Feature Block - imagin Design
+ * Two-column layout for feature highlights
+ */
+
+.columns-feature {
+  padding: var(--spacing-xl) 0;
+}
+
+.columns-feature > div {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-l);
+}
+
+.columns-feature img {
+  width: 100%;
+  height: auto;
+  border-radius: var(--border-radius-l);
+}
+
+.columns-feature > div > div {
+  order: 1;
+}
+
+.columns-feature > div > .columns-feature-img-col {
+  order: 0;
+}
+
+.columns-feature > div > .columns-feature-img-col img {
+  display: block;
+  box-shadow: var(--shadow-lg);
+}
+
+/* Text content styling */
+.columns-feature h2 {
+  font-size: var(--heading-font-size-l);
+  font-weight: var(--font-weight-extrabold);
+  margin-bottom: var(--spacing-m);
+  color: var(--color-text-heading);
+}
+
+.columns-feature h3 {
+  font-size: var(--heading-font-size-s);
+  font-weight: var(--font-weight-bold);
+  margin-bottom: var(--spacing-xs);
+}
+
+.columns-feature p {
+  font-size: var(--body-font-size-m);
+  line-height: var(--line-height-normal);
+  color: var(--color-text-primary);
+  margin-bottom: var(--spacing-m);
+}
+
+.columns-feature ul,
+.columns-feature ol {
+  padding-left: var(--spacing-l);
+  margin-bottom: var(--spacing-m);
+}
+
+.columns-feature li {
+  margin-bottom: var(--spacing-xs);
+  font-size: var(--body-font-size-m);
+  line-height: var(--line-height-normal);
+}
+
+/* Strong text highlighting */
+.columns-feature strong {
+  color: var(--color-text-heading);
+  font-weight: var(--font-weight-bold);
+}
+
+/* Steps/numbered list styling */
+.columns-feature ol {
+  counter-reset: step-counter;
+  list-style: none;
+  padding-left: 0;
+}
+
+.columns-feature ol li {
+  position: relative;
+  padding-left: var(--spacing-xl);
+  margin-bottom: var(--spacing-m);
+}
+
+.columns-feature ol li::before {
+  content: counter(step-counter);
+  counter-increment: step-counter;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 28px;
+  height: 28px;
+  background: var(--gradient-primary);
+  color: var(--color-text-primary);
+  font-weight: var(--font-weight-bold);
+  font-size: var(--body-font-size-s);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* CTA buttons in columns */
+.columns-feature a.button {
+  display: inline-block;
+  margin-top: var(--spacing-m);
+}
+
+/* Desktop layout */
+@media (width >= 900px) {
+  .columns-feature > div {
+    align-items: center;
+    flex-direction: row;
+    gap: var(--spacing-xxl);
+  }
+
+  .columns-feature > div > div {
+    flex: 1;
+    order: unset;
+  }
+
+  .columns-feature h2 {
+    font-size: var(--heading-font-size-xl);
+  }
+
+  .columns-feature p {
+    font-size: var(--body-font-size-l);
+  }
+}
+
+/* Reverse layout variant */
+.columns-feature.reverse > div {
+  flex-direction: column;
+}
+
+@media (width >= 900px) {
+  .columns-feature.reverse > div {
+    flex-direction: row-reverse;
+  }
+}
+
+/* Highlight box variant for important info */
+.columns-feature .highlight-box {
+  background-color: var(--color-background-light);
+  padding: var(--spacing-l);
+  border-radius: var(--border-radius-m);
+  border-left: 4px solid var(--color-accent);
+}
+
+.columns-feature .highlight-box strong {
+  display: block;
+  margin-bottom: var(--spacing-xs);
+  color: var(--color-accent);
+}

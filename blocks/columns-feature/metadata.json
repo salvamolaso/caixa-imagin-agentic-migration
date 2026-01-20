@@ -1,0 +1,39 @@
+{
+  "variantName": "columns-feature",
+  "baseBlock": "columns",
+  "version": "1.0.0",
+  "created": "2026-01-20T11:37:00.000Z",
+  "sourceContext": {
+    "originUrl": "https://www.imagin.com/",
+    "originPage": "Homepage feature sections",
+    "blockPosition": "middle"
+  },
+  "visualCharacteristics": {
+    "colorScheme": "light",
+    "density": "spacious",
+    "purpose": "feature-layout",
+    "imagePattern": "large"
+  },
+  "contentPattern": {
+    "structure": "text/list + image OR image + text/list",
+    "buttonCount": 0,
+    "imageCount": 1
+  },
+  "reuseGuidance": {
+    "suitableFor": [
+      "feature sections with text and image",
+      "product highlights",
+      "app feature showcases",
+      "two-column layouts"
+    ],
+    "notSuitableFor": [
+      "multi-column text layouts",
+      "comparison tables"
+    ]
+  },
+  "usage": {
+    "pagesUsing": ["/index"],
+    "reuseCount": 1,
+    "lastUsed": "2026-01-20T11:37:00.000Z"
+  }
+}
