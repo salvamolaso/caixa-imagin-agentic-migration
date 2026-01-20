@@ -228,6 +228,19 @@ ul li::before {
   background-repeat: no-repeat;
 }
 
+/* Remove bullet points from cards-product */
+.cards-product ul {
+  padding-left: 0;
+}
+
+.cards-product ul li {
+  padding-left: 0;
+}
+
+.cards-product ul li::before {
+  display: none;
+}
+
 strong {
   font-weight: var(--font-weight-bold);
 }
